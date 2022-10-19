@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+    <record id="command_action" model="ir.actions.act_window">
+        <field name="name">Command</field>
+        <field name="res_model">qzhub_bot.command</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new command
+            </p>
+        </field>
+    </record>
+
+    <record id="command_tree" model="ir.ui.view">
+        <field name="name">qzhub_bot.command.tree</field>
+        <field name="model">qzhub_bot.command</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="command"/>
+                <field name="chatbot"/>
+                <field name="model"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="command_form" model="ir.ui.view">
+        <field name="name">qzhub_bot.command.form</field>
+        <field name="model">qzhub_bot.command</field>
+        <field name="arch" type="xml">
+            <form string="Command">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="command" string="Command"/>
+                        <h1>
+                            <field name="command"/>
+                        </h1>
+                    </div>
+                    <group string="Chatbot">
+                        <field name="chatbot"/>
+                        <field name="model"/>
+                    </group>
+                    <group string="Fields">
+                        <field name="filters"/>
+                    </group>
+                    <group string="Templates">
+                        <field name="jinja2_template"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

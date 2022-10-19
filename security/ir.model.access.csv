@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_qzhub_bot_bot,access_qzhub_bot_bot,model_qzhub_bot_bot,,1,1,1,1
+access_qzhub_bot_command,access_chatbot_command,model_qzhub_bot_command,,1,1,1,1

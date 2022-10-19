@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem
+        	id="main_menu_qzhub_bot"
+        	name="Chatbot"
+           />
+
+    <menuitem
+            id="menu_qzhub_bot_chatbot"
+            name="Bots"
+            parent="main_menu_qzhub_bot"
+            sequence="1"
+            action="bot_action"
+            />
+
+        <menuitem
+            id="menu_chatbot_command"
+            name="Commands"
+            parent="main_menu_qzhub_bot"
+            sequence="2"
+            action="command_action"
+            />
+
+        <menuitem
+            id="menu_chatbot_configuration"
+            name="Configuration"
+            parent="main_menu_qzhub_bot"
+            sequence="3"
+            />
+
+        <menuitem
+            id="menu_chatbot_configuration_settings"
+            name="Settings"
+            parent="menu_chatbot_configuration"
+            sequence="1"
+            action="settings_action"
+            />
+
+</odoo>
