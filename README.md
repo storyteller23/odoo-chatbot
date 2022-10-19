@@ -1,1 +1,1 @@
-# qzhub_bot
+# odoo - qzhub_bot
