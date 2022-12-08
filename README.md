@@ -1,1 +1,1 @@
-# odoo - qzhub_bot
+# odoo - chatbot
